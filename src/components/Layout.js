@@ -13,40 +13,49 @@ const TemplateWrapper = ({ children }) => {
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
-        <meta name="description" content={description} />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href={`${withPrefix('/')}img/apple-touch-icon.png`}
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix('/')}img/favicon-32x32.png`}
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix('/')}img/favicon-16x16.png`}
-          sizes="16x16"
-        />
-
-        <link
-          rel="mask-icon"
-          href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
-          color="#ff4400"
-        />
-        <meta name="theme-color" content="#fff" />
-
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta charSet="utf-8" />
         <meta
-          property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link rel="stylesheet" href="static/css/elegant-fonts.css" />
+
+        <link rel="stylesheet" href="static/css/themify-icons.css" />
+
+        <link rel="stylesheet" href="static/css/swiper.min.css" />
+
+        <link rel="stylesheet" href="static/css/style.css" />
+        {/*<script type="text/javascript" src="static/js/jquery.js"></script>*/}
+        {/*<script*/}
+        {/*    type="text/javascript"*/}
+        {/*    src="static/js/jquery.collapsible.min.js"*/}
+        {/*></script>*/}
+        {/*<script type="text/javascript" src="static/js/swiper.min.js"></script>*/}
+        {/*<script*/}
+        {/*    type="text/javascript"*/}
+        {/*    src="static/js/jquery.countdown.min.js"*/}
+        {/*></script>*/}
+        {/*<script*/}
+        {/*    type="text/javascript"*/}
+        {/*    src="static/js/circle-progress.min.js"*/}
+        {/*></script>*/}
+        {/*<script*/}
+        {/*    type="text/javascript"*/}
+        {/*    src="static/js/jquery.countTo.min.js"*/}
+        {/*></script>*/}
+        {/*<script*/}
+        {/*    type="text/javascript"*/}
+        {/*    src="static/js/jquery.barfiller.js"*/}
+        {/*></script>*/}
+        {/*<script type="text/javascript" src="static/js/custom.js"></script>*/}
       </Helmet>
       <Navbar />
       <div>{children}</div>
